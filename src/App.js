@@ -1,5 +1,6 @@
-//Importing React since we are using React.
+// Importing React since we are using React.
 import React, { Component } from 'react';
+<<<<<<< HEAD
 //Importing React Router to add page routes.
 import { BrowserRouter as Router, Route } from "react-router-dom";
 //Importing UI components from rebass.
@@ -48,8 +49,35 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 =======
 import { createMuiTheme } from 'material-ui/styles';
 >>>>>>> 87f621b (updated health log form)
+=======
+// Importing material-ui framework
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// Importing React Router to add page routes.
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+// Importing UI components from rebass.
+import { Container } from 'rebass';
+// Importing app logo.
+// import logo from './logo.svg';
+// Importing css
+import './App.css';
+// Importing Navbar component.
+import NavBar from './Components/AppBar';
+// Importing Footer component.
+import Footer from './Components/Footer';
+// Importing Home page component.
+import Home from './containers/Home';
+// Importing the My symptom journal page component.
+import SymptomJournal from './containers/SymptomJournal';
+// //Importing the DoctorList page component.
+import DoctorList from './containers/DoctorsList';
+// //Importing the Appointments page component.
+import Appointments from './containers/Appointments';
+// //Importing the My health log page component.
+import MedLog from './containers/MedLog';
+>>>>>>> 6774ed1 (cleaning up eslint errors. Created form components using material ui)
 
-//Render the components to the page.
+
+// Render the components to the page.
 class App extends Component {
   render() {
     return [
@@ -79,19 +107,25 @@ class App extends Component {
         <Router>
           <Container>
             <Route exact path="/home" component={Home} />
-            <Route exact path="/symptoms" component={SymptomJournal} /> 
+            <Route exact path="/symptoms" component={SymptomJournal} />
             <Route exact path="/doctors" component={DoctorList} />
             <Route exact path="/appointments" component={Appointments} />
-            <Route exact path="/log" component={MedLog} /> 
+            <Route exact path="/log" component={MedLog} />
           </Container>
         </Router>,
+<<<<<<< HEAD
         <Footer/>
       </MuiThemeProvider>
       
 >>>>>>> cd03d5c (cleaning up eslint errors. Added material-ui-next. Removing rebass)
     ]
+=======
+        <Footer />
+      </MuiThemeProvider>,
+    ];
+>>>>>>> 6774ed1 (cleaning up eslint errors. Created form components using material ui)
   }
 }
 
-//Exporting App component so that index.js can access it and render the components to the page.
+// Exporting App component so that index.js can access it and render the components to the page.
 export default App;
