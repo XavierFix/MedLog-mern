@@ -36,9 +36,9 @@ import MedLog from "./containers/MedLog"
 >>>>>>> 9aaecee (created medical log page)
 =======
 // //Importing the DoctorList page component.
-// import DoctorList from "./containers/DoctorsList"
+import DoctorList from "./containers/DoctorsList"
 // //Importing the Appointments page component.
-// import Appointments from "./containers/Appointments"
+import Appointments from "./containers/Appointments"
 // //Importing the My health log page component.
 import MedLog from "./containers/MedLog"
 //Importing material-ui framework
@@ -80,8 +80,8 @@ class App extends Component {
           <Container>
             <Route exact path="/home" component={Home} />
             <Route exact path="/symptoms" component={SymptomJournal} /> 
-            {/* <Route exact path="/doctors" component={DoctorList} />
-            <Route exact path="/appointments" component={Appointments} /> */}
+            <Route exact path="/doctors" component={DoctorList} />
+            <Route exact path="/appointments" component={Appointments} />
             <Route exact path="/log" component={MedLog} /> 
           </Container>
         </Router>,
