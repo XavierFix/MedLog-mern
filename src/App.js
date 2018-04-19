@@ -1,6 +1,7 @@
 // Importing React since we are using React.
 import React, { Component } from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 //Importing React Router to add page routes.
 import { BrowserRouter as Router, Route } from "react-router-dom";
 //Importing UI components from rebass.
@@ -52,8 +53,12 @@ import { createMuiTheme } from 'material-ui/styles';
 =======
 // Importing material-ui framework
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+=======
+>>>>>>> 2793c35 (updated ui. fixed menu in navbar)
 // Importing React Router to add page routes.
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+// Importing material-ui theme.
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 // Importing UI components from rebass.
 import { Container } from 'rebass';
 // Importing app logo.
@@ -76,11 +81,23 @@ import Appointments from './containers/Appointments';
 import MedLog from './containers/MedLog';
 >>>>>>> 6774ed1 (cleaning up eslint errors. Created form components using material ui)
 
+// App theme customization.
+const theme = createMuiTheme({
+  palette: {
+    type: 'dark', // Switching the dark mode on is a single property value change.
+  },
+  typography: {
+    // In Japanese the characters are usually larger.
+    fontSize: 18,
+  },
+});
+
 
 // Render the components to the page.
 class App extends Component {
   render() {
     return [
+<<<<<<< HEAD
 <<<<<<< HEAD
       <Navbar />,
       <Router>
@@ -103,6 +120,9 @@ class App extends Component {
       <Footer/>
 =======
       <MuiThemeProvider>
+=======
+      <MuiThemeProvider theme={theme}>
+>>>>>>> 2793c35 (updated ui. fixed menu in navbar)
         <NavBar />,
         <Router>
           <Container>
