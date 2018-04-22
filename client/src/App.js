@@ -81,6 +81,19 @@ import Appointments from './containers/Appointments';
 import MedLog from './containers/MedLog';
 >>>>>>> 6774ed1 (cleaning up eslint errors. Created form components using material ui)
 
+
+import Navigation from './Components/Navigation';
+import LandingPage from './Components/Landing';
+import SignUpPage from './Components/SignUp';
+import SignInPage from './Components/SignIn';
+import PasswordForgetPage from './Components/PasswordForget';
+import HomePage from './Components/Home';
+import AccountPage from './Components/Account';
+import * as routes from './constants/routes';
+
+import * as auth from './firebase/firebase';
+import { firebase } from './firebase';
+
 // App theme customization.
 const theme = createMuiTheme({
   palette: {
@@ -93,8 +106,23 @@ const theme = createMuiTheme({
 });
 
 
-// Render the components to the page.
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      authUser: null,
+    };
+  }
+
+  componentDidMount() {
+    firebase.auth.onAuthStateChanged(authUser => {
+      authUser
+        ? this.setState(() => ({ authUser }))
+        : this.setState(() => ({ authUser: null }));
+    });
+  }
   render() {
     return [
 <<<<<<< HEAD
@@ -125,7 +153,38 @@ class App extends Component {
 >>>>>>> 2793c35 (updated ui. fixed menu in navbar)
         <NavBar />,
         <Router>
-          <Container>
+        <Container>
+          <Navigation authUser={this.state.authUser} />
+
+      <hr/>
+
+          <Route
+            exact path={routes.LANDING}
+            component={() => <LandingPage />}
+          />
+          <Route
+            exact path={routes.SIGN_UP}
+            component={() => <SignUpPage />}
+          />
+          <Route
+            exact path={routes.SIGN_IN}
+            component={() => <SignInPage />}
+          />
+          <Route
+            exact path={routes.PASSWORD_FORGET}
+            component={() => <PasswordForgetPage />}
+          />
+          <Route
+            exact path={routes.HOME}
+            component={() => <HomePage />}
+          />
+          <Route
+            exact path={routes.ACCOUNT}
+            component={() => <AccountPage />}
+          />
+        
+          
+            <Route exact path="/" component={SignInPage} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/symptoms" component={SymptomJournal} />
             <Route exact path="/doctors" component={DoctorList} />
