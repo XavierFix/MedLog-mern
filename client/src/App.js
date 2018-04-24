@@ -84,7 +84,12 @@ import MedLog from './containers/MedLog';
 =======
 // Importing the Attachments page.
 import Attachments from './containers/Attachments';
+<<<<<<< HEAD
 >>>>>>> a5d65b6 (added attachments page)
+=======
+// Importing the Prescriptions page
+import Prescriptions from './containers/Prescriptions';
+>>>>>>> 4ed1d43 (set up prescription form)
 
 
 import Navigation from './Components/Navigation';
@@ -184,7 +189,7 @@ class App extends Component {
             <Route
               exact path={routes.ACCOUNT}
               component={() => <AccountPage />}
-            />  
+            />
             <Route exact path="/" component={SignInPage} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/symptoms" component={SymptomJournal} />
@@ -192,6 +197,7 @@ class App extends Component {
             <Route exact path="/appointments" component={Appointments} />
             <Route exact path="/log" component={MedLog} />
             <Route exact path="/attachments" component={Attachments} />
+            <Route exact path="/prescriptions" component={Prescriptions} />
           </Container>
         </Router>,
 <<<<<<< HEAD
