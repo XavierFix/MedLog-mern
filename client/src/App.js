@@ -89,7 +89,12 @@ import Attachments from './containers/Attachments';
 =======
 // Importing the Prescriptions page
 import Prescriptions from './containers/Prescriptions';
+<<<<<<< HEAD
 >>>>>>> 4ed1d43 (set up prescription form)
+=======
+// Importing the Charts page
+import Charts from './containers/Charts';
+>>>>>>> a60f8c9 (created separate page for charts. Added icon to home screen.)
 
 
 import Navigation from './Components/Navigation';
@@ -198,6 +203,7 @@ class App extends Component {
             <Route exact path="/log" component={MedLog} />
             <Route exact path="/attachments" component={Attachments} />
             <Route exact path="/prescriptions" component={Prescriptions} />
+            <Route exact path="/charts" component={Charts} />
           </Container>
         </Router>,
 <<<<<<< HEAD
