@@ -94,20 +94,25 @@ import Prescriptions from './containers/Prescriptions';
 =======
 // Importing the Charts page
 import Charts from './containers/Charts';
+<<<<<<< HEAD
 >>>>>>> a60f8c9 (created separate page for charts. Added icon to home screen.)
+=======
+// Importing the Login page
+import Login from './containers/Login';
+>>>>>>> 4c27357 (getting closer to mvp)
 
 
-import Navigation from './Components/Navigation';
-import LandingPage from './Components/Landing';
-import SignUpPage from './Components/SignUp';
-import SignInPage from './Components/SignIn';
-import PasswordForgetPage from './Components/PasswordForget';
-// import HomePage from './Components/Home';
-import AccountPage from './Components/Account';
-import * as routes from './constants/routes';
+// import Navigation from './Components/Navigation';
+// import LandingPage from './Components/Landing';
+// import SignUpPage from './Components/SignUp';
+// import SignInPage from './Components/SignIn';
+// import PasswordForgetPage from './Components/PasswordForget';
+// // import HomePage from './Components/Home';
+// import AccountPage from './Components/Account';
+// import * as routes from './constants/routes';
 
-import * as auth from './firebase/firebase';
-import { firebase } from './firebase';
+// import * as auth from './firebase/firebase';
+// import { firebase } from './firebase';
 
 // App theme customization.
 const theme = createMuiTheme({
@@ -121,21 +126,21 @@ const theme = createMuiTheme({
 });
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.state = {
-      authUser: null,
-    };
-  }
+  //   this.state = {
+  //     authUser: null,
+  //   };
+  // }
 
-  componentDidMount() {
-    firebase.auth.onAuthStateChanged(authUser => {
-      authUser
-        ? this.setState(() => ({ authUser }))
-        : this.setState(() => ({ authUser: null }));
-    });
-  }
+  // componentDidMount() {
+  //   firebase.auth.onAuthStateChanged(authUser => {
+  //     authUser
+  //       ? this.setState(() => ({ authUser }))
+  //       : this.setState(() => ({ authUser: null }));
+  //   });
+  // }
   render() {
     return [
 <<<<<<< HEAD
@@ -167,11 +172,11 @@ class App extends Component {
         <NavBar />,
         <Router>
           <Container>
-            <Navigation authUser={this.state.authUser} />
+            {/* <Navigation authUser={this.state.authUser} />
 
-            <hr />
+            <hr /> */}
 
-            <Route
+            {/* <Route
               exact path={routes.LANDING}
               component={() => <LandingPage />}
             />
@@ -186,16 +191,16 @@ class App extends Component {
             <Route
               exact path={routes.PASSWORD_FORGET}
               component={() => <PasswordForgetPage />}
-            />
+            /> */}
             {/* <Route
               exact path={routes.HOME}
               component={() => <HomePage />}
             /> */}
-            <Route
+            {/* <Route
               exact path={routes.ACCOUNT}
-              component={() => <AccountPage />}
-            />
-            <Route exact path="/" component={SignInPage} />
+              component={() => <AccountPage />} */}
+            {/* /> */}
+            <Route exact path="/" component={Login} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/symptoms" component={SymptomJournal} />
             <Route exact path="/doctors" component={DoctorList} />
