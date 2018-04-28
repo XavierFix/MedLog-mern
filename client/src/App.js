@@ -99,6 +99,7 @@ import Charts from './containers/Charts';
 =======
 // Importing the Login page
 import Login from './containers/Login';
+<<<<<<< HEAD
 >>>>>>> 4c27357 (getting closer to mvp)
 
 
@@ -113,6 +114,10 @@ import Login from './containers/Login';
 
 // import * as auth from './firebase/firebase';
 // import { firebase } from './firebase';
+=======
+// Importing the side bar
+import Sidebar from './Components/Sidebar';
+>>>>>>> 38d91c4 (sidebar partially there)
 
 // App theme customization.
 const theme = createMuiTheme({
@@ -126,21 +131,6 @@ const theme = createMuiTheme({
 });
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = {
-  //     authUser: null,
-  //   };
-  // }
-
-  // componentDidMount() {
-  //   firebase.auth.onAuthStateChanged(authUser => {
-  //     authUser
-  //       ? this.setState(() => ({ authUser }))
-  //       : this.setState(() => ({ authUser: null }));
-  //   });
-  // }
   render() {
     return [
 <<<<<<< HEAD
@@ -170,36 +160,9 @@ class App extends Component {
       <MuiThemeProvider theme={theme}>
 >>>>>>> 2793c35 (updated ui. fixed menu in navbar)
         <NavBar />,
-        <Router>
+        <Sidebar />,
+        {/* <Router>
           <Container>
-            {/* <Navigation authUser={this.state.authUser} />
-
-            <hr /> */}
-
-            {/* <Route
-              exact path={routes.LANDING}
-              component={() => <LandingPage />}
-            />
-            <Route
-              exact path={routes.SIGN_UP}
-              component={() => <SignUpPage />}
-            />
-            <Route
-              exact path={routes.SIGN_IN}
-              component={() => <SignInPage />}
-            />
-            <Route
-              exact path={routes.PASSWORD_FORGET}
-              component={() => <PasswordForgetPage />}
-            /> */}
-            {/* <Route
-              exact path={routes.HOME}
-              component={() => <HomePage />}
-            /> */}
-            {/* <Route
-              exact path={routes.ACCOUNT}
-              component={() => <AccountPage />} */}
-            {/* /> */}
             <Route exact path="/" component={Login} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/symptoms" component={SymptomJournal} />
@@ -210,6 +173,7 @@ class App extends Component {
             <Route exact path="/prescriptions" component={Prescriptions} />
             <Route exact path="/charts" component={Charts} />
           </Container>
+<<<<<<< HEAD
         </Router>,
 <<<<<<< HEAD
         <Footer/>
@@ -218,6 +182,9 @@ class App extends Component {
 >>>>>>> cd03d5c (cleaning up eslint errors. Added material-ui-next. Removing rebass)
     ]
 =======
+=======
+        </Router>, */}
+>>>>>>> 38d91c4 (sidebar partially there)
         <Footer />
       </MuiThemeProvider>,
     ];
