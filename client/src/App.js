@@ -159,8 +159,12 @@ class App extends Component {
       <MuiThemeProvider>
 =======
       <MuiThemeProvider theme={theme}>
+<<<<<<< HEAD
 >>>>>>> 2793c35 (updated ui. fixed menu in navbar)
         <NavBar />,
+=======
+        <NavBar />
+>>>>>>> 774992a (file cleanup)
         <Router>
           <div>
             <Route exact path="/" component={Login} />
@@ -188,8 +192,12 @@ class App extends Component {
 >>>>>>> 38d91c4 (sidebar partially there)
 =======
           </div>
+<<<<<<< HEAD
         </Router>,
 >>>>>>> 9732dc9 (side navigation bar added. not mobile responsive yet.)
+=======
+        </Router>
+>>>>>>> 774992a (file cleanup)
         <Footer />
       </MuiThemeProvider>,
     ];
