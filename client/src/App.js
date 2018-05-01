@@ -56,7 +56,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 =======
 >>>>>>> 2793c35 (updated ui. fixed menu in navbar)
 // Importing React Router to add page routes.
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Importing material-ui theme.
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 // Importing app logo.
@@ -99,6 +99,7 @@ import Charts from './containers/Charts';
 import Login from './containers/Login';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4c27357 (getting closer to mvp)
 
 
@@ -119,6 +120,10 @@ import Sidebar from './Components/Sidebar';
 >>>>>>> 38d91c4 (sidebar partially there)
 =======
 >>>>>>> 9732dc9 (side navigation bar added. not mobile responsive yet.)
+=======
+// Importing the 404 page
+import NoMatch from './containers/NoMatch';
+>>>>>>> 0579153 (404 page added)
 
 // App theme customization.
 const theme = createMuiTheme({
@@ -167,6 +172,7 @@ class App extends Component {
 >>>>>>> 774992a (file cleanup)
         <Router>
           <div>
+<<<<<<< HEAD
             <Route exact path="/" component={Login} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/symptoms" component={SymptomJournal} />
@@ -191,6 +197,20 @@ class App extends Component {
         </Router>, */}
 >>>>>>> 38d91c4 (sidebar partially there)
 =======
+=======
+            <Switch>
+              <Route exact path="/" component={Login} />
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/symptoms" component={SymptomJournal} />
+              <Route exact path="/doctors" component={DoctorList} />
+              <Route exact path="/appointments" component={Appointments} />
+              <Route exact path="/log" component={MedLog} />
+              <Route exact path="/attachments" component={Attachments} />
+              <Route exact path="/prescriptions" component={Prescriptions} />
+              <Route exact path="/charts" component={Charts} />
+              <Route component={NoMatch} />
+            </Switch>
+>>>>>>> 0579153 (404 page added)
           </div>
 <<<<<<< HEAD
         </Router>,
