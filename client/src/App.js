@@ -165,6 +165,7 @@ class App extends Component {
 =======
       <MuiThemeProvider theme={theme}>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2793c35 (updated ui. fixed menu in navbar)
         <NavBar />,
 =======
@@ -198,6 +199,11 @@ class App extends Component {
 >>>>>>> 38d91c4 (sidebar partially there)
 =======
 =======
+=======
+        <Router>
+          <div>
+            <NavBar />
+>>>>>>> 80d3f19 (added visit notes to health log page.)
             <Switch>
               <Route exact path="/" component={Login} />
               <Route exact path="/home" component={Home} />
