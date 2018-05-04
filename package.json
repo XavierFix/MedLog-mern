@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "grommet": "^1.10.1",
     "material-ui": "^1.0.0-beta.42",
     "mongoose": "^5.0.14",
@@ -39,6 +40,11 @@
     "react-router-dom": "^4.2.2",
     "react-router-firebase-auth-guard": "^1.1.0"
 >>>>>>> 4c5ed0b (Got the authentication with firebase and node to work, not pretty yet)
+=======
+    "mongoose": "^5.0.15",
+    "morgan": "^1.9.0",
+    "react-router-dom": "^4.2.2"
+>>>>>>> b88cbf8 (clean up)
   },
   "scripts": {
     "server": "node server.js",
