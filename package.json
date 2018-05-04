@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "grommet": "^1.10.1",
     "material-ui": "^1.0.0-beta.42",
     "mongoose": "^5.0.14",
@@ -57,11 +58,14 @@
 =======
 >>>>>>> 9902cf1 (Update package.json)
     "firebase": "^4.13.1",
+=======
+>>>>>>> e930c32 (build)
     "fusioncharts": "^3.12.2",
     "mongoose": "^5.0.15",
     "morgan": "^1.9.0",
     "react-chartist": "^0.13.1",
     "react-fusioncharts": "^1.0.5",
+<<<<<<< HEAD
     "react-router-dom": "^4.2.2",
     "react-router-firebase-auth-guard": "^1.1.0"
 <<<<<<< HEAD
@@ -69,6 +73,9 @@
 >>>>>>> 6e9a3bd (charting is somewhat working, saving what done before making changes)
 =======
 >>>>>>> 9902cf1 (Update package.json)
+=======
+    "react-router-dom": "^4.2.2"
+>>>>>>> e930c32 (build)
   },
   "scripts": {
     "server": "node server.js",
