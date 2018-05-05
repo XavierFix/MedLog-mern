@@ -77,6 +77,7 @@
     "react-chartist": "^0.13.1",
     "react-fusioncharts": "^1.0.5",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-router-dom": "^4.2.2",
     "react-router-firebase-auth-guard": "^1.1.0"
 <<<<<<< HEAD
@@ -87,6 +88,10 @@
 =======
     "react-router-dom": "^4.2.2"
 >>>>>>> e930c32 (build)
+=======
+    "react-router-dom": "^4.2.2",
+    "yarn": "^1.6.0"
+>>>>>>> 674689a (dropzone)
   },
   "scripts": {
     "server": "node server.js",
