@@ -128,7 +128,12 @@ import Signup from './containers/Signup';
 >>>>>>> 8986deb (auth working)
 // Importing the 404 page
 import NoMatch from './containers/NoMatch';
+<<<<<<< HEAD
 >>>>>>> 0579153 (404 page added)
+=======
+// Importing app setup page
+import Welcome from './containers/Welcome';
+>>>>>>> 387b661 (added welcome page)
 
 // App theme customization.
 const theme = createMuiTheme({
@@ -220,6 +225,7 @@ class App extends Component {
               <Route exact path="/attachments" component={Attachments} />
               <Route exact path="/prescriptions" component={Prescriptions} />
               <Route exact path="/charts" component={Charts} />
+              <Route exact path="/welcome" component={Welcome} />
               <Route component={NoMatch} />
             </Switch>
 >>>>>>> 0579153 (404 page added)
