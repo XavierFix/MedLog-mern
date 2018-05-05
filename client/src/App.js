@@ -100,6 +100,7 @@ import Login from './containers/Login';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4c27357 (getting closer to mvp)
 
 
@@ -121,6 +122,10 @@ import Sidebar from './Components/Sidebar';
 =======
 >>>>>>> 9732dc9 (side navigation bar added. not mobile responsive yet.)
 =======
+=======
+// Importing the Signup page
+import Signup from './containers/Signup';
+>>>>>>> 8986deb (auth working)
 // Importing the 404 page
 import NoMatch from './containers/NoMatch';
 >>>>>>> 0579153 (404 page added)
@@ -206,6 +211,7 @@ class App extends Component {
 >>>>>>> 80d3f19 (added visit notes to health log page.)
             <Switch>
               <Route exact path="/" component={Login} />
+              <Route exact path="/signup" component={Signup} />
               <Route exact path="/home" component={Home} />
               <Route exact path="/symptoms" component={SymptomJournal} />
               <Route exact path="/doctors" component={DoctorList} />
