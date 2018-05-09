@@ -154,6 +154,15 @@ const theme = createMuiTheme({
 });
 
 class App extends Component {
+
+  state = {
+    currentlyLoggedInUser: null
+  }
+  setUser = userId => {
+    this.setState ({ currentlyLoggedInUser: userId})
+    console.log(userId)
+  }
+
   render() {
     return [
 <<<<<<< HEAD
@@ -222,10 +231,12 @@ class App extends Component {
             <NavBar />
 >>>>>>> 80d3f19 (added visit notes to health log page.)
             <Switch>
-              <Route exact path="/" component={Login} />
-              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/" render={props => <Login {...props} setUser={this.setUser}></Login>}/>
+              <Route exact path="/signup" component={Signup} 
+                loggedInUser = {this.state.currentlyLoggedInUser}/>
               <Route exact path="/home" component={Home} />
-              <Route exact path="/symptoms" component={SymptomJournal} />
+              <Route exact path="/symptoms" render={props => <SymptomJournal 
+              {...props}></SymptomJournal>} loggedInUser={this.state.currentlyLoggedInUser} />
               <Route exact path="/doctors" component={DoctorList} />
               <Route exact path="/appointments" component={Appointments} />
               <Route exact path="/log" component={MedLog} />
