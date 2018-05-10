@@ -63,8 +63,6 @@ import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 // import logo from './logo.svg';
 // Importing css
 import './App.css';
-// Importing Navbar component.
-import NavBar from './Components/AppBar';
 // Importing Footer component.
 import Footer from './Components/Footer';
 // Importing Home page component.
@@ -228,8 +226,11 @@ class App extends Component {
 =======
         <Router>
           <div>
+<<<<<<< HEAD
             <NavBar />
 >>>>>>> 80d3f19 (added visit notes to health log page.)
+=======
+>>>>>>> e7375dc (ui cleanup)
             <Switch>
               <Route exact path="/" render={props => <Login {...props} setUser={this.setUser}></Login>}/>
               <Route exact path="/signup" component={Signup} 
