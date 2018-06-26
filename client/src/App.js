@@ -74,6 +74,7 @@ import Appointments from './containers/Appointments';
 // Importing the My health log page component.
 import MedLog from './containers/MedLog';
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6774ed1 (cleaning up eslint errors. Created form components using material ui)
 =======
 // Importing the Attachments page.
@@ -81,6 +82,8 @@ import Attachments from './containers/Attachments';
 <<<<<<< HEAD
 >>>>>>> a5d65b6 (added attachments page)
 =======
+=======
+>>>>>>> 0883e0d (more cleanup)
 // Importing the Prescriptions page
 import Prescriptions from './containers/Prescriptions';
 <<<<<<< HEAD
@@ -126,6 +129,7 @@ import Signup from './containers/Signup';
 import NoMatch from './containers/NoMatch';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0579153 (404 page added)
 =======
 // Importing app setup page
@@ -137,6 +141,8 @@ import Welcome from './containers/Welcome';
 // Importing setup page
 import Setup from './containers/Setup';
 >>>>>>> 85d7396 (test)
+=======
+>>>>>>> 0883e0d (more cleanup)
 
 // App theme customization.
 const theme = createMuiTheme({
@@ -238,11 +244,8 @@ class App extends Component {
               <Route exact path="/doctors" component={DoctorList} />
               <Route exact path="/appointments" component={Appointments} />
               <Route exact path="/log" component={MedLog} />
-              <Route exact path="/attachments" component={Attachments} />
               <Route exact path="/prescriptions" component={Prescriptions} />
               <Route exact path="/charts" component={Charts} />
-              <Route exact path="/welcome" component={Welcome} />
-              <Route exact path="/setup" component={Setup} />
               <Route component={NoMatch} />
             </Switch>
 >>>>>>> 0579153 (404 page added)
