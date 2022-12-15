@@ -22,30 +22,11 @@ HealthTracker is a MERN stack application that allows you to log and keep track 
 
 ## <a name="live"></a>Live
 
-<http://myhealthtracker.herokuapp.com/>
 
 ## <a name="presentation"></a>Presentation
 <p>The app was presented at the University of Minnesota Coding Bootcamp Demo Day on May 10, 2018.</p>
 
 <p>The slides from that presentation are available <a href="https://docs.google.com/presentation/d/10fSN9kcjoPq1m--SUcrzG1SD8DN-avFuZrVtKLj7_k8/edit?usp=sharing">here</a>.</p>
-
-## <a name="contributors"></a>Contributors
-The HealthTracker app was created by a team of 4 developers at the University of Minnesota.
-
-<a href="https://github.com/2crazyflowers">Sara Bracewell</a>
-<p>Defined database architecture/models and developed data visualization charts to track height and weight measurements over time.</p>
-<br>
-
-<a href="https://github.com/kkotewall">Kayla Kotewall</a>
-<p>Developed feature that allows attachments (for example, lab reports) to be uploaded to Amazon S3 and helped implement user authentication using Passport.js.</p>
-<br>
-
-<a href="https://github.com/TowerGuy2909">Jerridd Speidel</a>
-<p>Developed user authentication using Passport.js, which ensures that a user is always authenticated when using the app and the user’s health information is protected.</p>
-<br>
-
-<a href="https://github.com/philipstubbs13/">Phil Stubbs</a>
-<p>Designed UX flow, developed UI using React, and helped managed project using GitHub task board/agile methodology.</p>
 
 ## <a name="screenshots"></a> Screenshots
 
@@ -191,10 +172,7 @@ To set up this application locally on your computer, perform the following steps
 
 ###  <a name="clone-repository"></a> 1. Clone the repository
 The first step is to clone the project repository to a local directory on your computer. To clone the repository, run the following commands:
-<pre>
-git clone https://github.com/philipstubbs13/MedLog.git
-cd ./MedLog
-</pre>
+
 
 ###  <a name="install-node"></a> 2. Install Node.js
 
@@ -350,5 +328,4 @@ The following is a list of potential enhancements for future code development.
 
 ## <a name ="Issues"></a> Issues
 
-<p>If you find an issue while using the app or have a request, <a href="https://github.com/philipstubbs13/MedLog/issues/" target="_blank">log the issue or request here</a>. These issues will be addressed in a future code update.</p>
 
